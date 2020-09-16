@@ -3,11 +3,11 @@ import {
   Card, CardWrapper, BaseCardFace, OverlayCardFace,
 } from './styles';
 
-export const SlideUpCard: React.FC<{ children: React.ReactNode }> = ({
+export const SlideDownCard: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
   if ((children as ReactNodeArray).length !== 2) {
-    throw new Error('Slide-up card requires exactly two children');
+    throw new Error('Slide-down card requires exactly two children');
   }
 
   const baseFace = (children as ReactNodeArray)[0];
